@@ -4,6 +4,10 @@ import LoginPage from "./pages/login.page.jsx";
 import NotFoundPage from "./pages/notfound.page.jsx";
 import RegisterPage from "./pages/register.page.jsx";
 import { BrowserRouter, Routes, Route } from "react-router";
+import { Toaster } from "react-hot-toast";
+
+
+
 function App() {
   return (
     <main className="h-screen min-w-full tracking-wider">
@@ -20,6 +24,7 @@ function App() {
           <Route path="*"  element={<NotFoundPage/>}/>
         </Routes>
       </BrowserRouter>
+      <Toaster/>
     </main>
   );
 }
